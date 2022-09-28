@@ -47,6 +47,14 @@ namespace TdrPenafiel.Models
         {
             return this.modelFact.SelectLegHeader(orseg);
         }
+        public DataTable GetSegJr(string leg)
+        {
+            return this.modelFact.GetSegJr(leg);
+        }
+        public void InsertOrderReport(string rorderh, string leg, string gbilto, string tipom, string rfecha)
+        {
+            this.modelFact.InsertOrderReport(rorderh, leg, gbilto, tipom, rfecha);
+        }
         public void OrderHeader(string leg, string rfecha)
         {
             this.modelFact.OrderHeader(leg, rfecha);
